@@ -1,6 +1,6 @@
 name: Checks based on file changes
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   comments:
