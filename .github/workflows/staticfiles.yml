@@ -3,7 +3,7 @@ name: Static files check
 on:
   pull_request:
     paths:
-      - 'static/*'
+      - 'static/**'
 
 jobs:
   commentstatic:
