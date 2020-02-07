@@ -1,6 +1,6 @@
 name: Checks based on file changes
 
-on: [push,pull_request]
+on: [push, pull_request]
 
 jobs:
   comments:
@@ -9,13 +9,13 @@ jobs:
     steps:
 
       - uses: actions/checkout@v2
-      with:
-        fetch-depth: 100
+        with:
+          fetch-depth: 100
 
       - uses: marceloprado/has-changed-path@master
         id: changed-static
         with:
-        paths: static/*
+          paths: static/*
 
       - name: comment PR
         if: steps.changed-static.outputs.changed == 'true'
