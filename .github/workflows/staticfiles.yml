@@ -15,4 +15,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: "Static files changed!"
+          msg: "Some static files have changed in the project. Remember to run: \n ```$ python ./manage.py compilescss\n$ python ./manage.py collectstatic –ignore=*.scss```"
+          
